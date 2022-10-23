@@ -1,0 +1,35 @@
+<title>Info customer</title>
+</head>
+<body>
+
+
+
+
+<img src="/images/14" height="60px"/><br><br>
+
+
+<form action="#" th:action="@{/customer-info}" th:object="${customer}">
+  <label for="id">ID</label>
+  <input readonly type="number" th:field="*{id}" id="id" placeholder="ID">
+  <br/>
+  <label for="firstName">First name</label>
+  <input readonly type="text" th:field="*{firstName}" id="firstName" placeholder="First Name">
+  <br/>
+  <label for="lastName">Last name</label>
+  <input readonly type="text" th:field="*{lastName}" id="lastName" placeholder="Last Name">
+  <br/>
+  <label for="patronymic">Patronymic</label>
+  <input readonly type="text" th:field="*{patronymic}" id="patronymic" placeholder="Patronymic">
+  <br/>
+  <label for="birthDate">Birth date</label>
+  <input readonly type="date" th:field="*{birthDate}" id="birthDate" placeholder="Birth date">
+  <br/>
+  <label for="email">Email</label>
+  <input readonly type="email" th:field="*{email}" id="email" placeholder="Email">
+  <br/>
+  <label for="phoneNumber">Phone number</label>
+  <input readonly type="text" th:field="*{phoneNumber}" id="phoneNumber" placeholder="Phone number">
+  <br/>
+</form>
+</body>
+</html>
